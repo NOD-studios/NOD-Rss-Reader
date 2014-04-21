@@ -1,7 +1,7 @@
 NOD-Rss-Reader
 ==============
 
-Simple rss storing and searching built with CakePHP
+Simple rss storing and searching build with CakePHP
 
 ##Install##
 
