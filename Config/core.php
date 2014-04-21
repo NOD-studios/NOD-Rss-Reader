@@ -22,7 +22,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-    Configure::write('debug', 2);
+    Configure::write('debug', 1);
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
@@ -341,11 +341,11 @@ if (Configure::read('debug') > 0) {
 // Prefix each application on the same server with a different string, to avoid Memcache and APC conflicts.
 $prefix = Inflector::slug(APP_DIR) . '_';
 $engine = 'Apc';
+$probability = 100;
 
-$APCconfig = compact('engine', 'duration', 'prefix') + array(
-     'probability' => 100
- );
+$cacheApc = compact('engine', 'duration', 'probability');
+$cacheFile = array('engine' => 'File') + compact('duration', 'probability');
 
-Cache::config('default', $APCconfig);
-Cache::config('_cake_model_', $APCconfig);
-Cache::config('_cake_core_', $APCconfig);
+Cache::config('default', $cacheApc);
+Cache::config('_cake_model_', $cacheApc);
+Cache::config('_cake_core_', $cacheFile);
