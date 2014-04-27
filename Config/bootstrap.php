@@ -80,7 +80,7 @@ CakePlugin::loadAll();
  * ));
  */
 
-require APP . '/Vendor/autoload.php';
+require APP . 'vendor/autoload.php';
 spl_autoload_unregister(array('App', 'load'));
 spl_autoload_register(array('App', 'load'), true, true);
 
