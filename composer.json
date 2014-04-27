@@ -5,7 +5,6 @@
         "simplepie/simplepie": "*",
         "cakephp/debug_kit": "*",
         "cakedc/search": "*",
-        "html2text/html2text": "*",
-        "cakedc/migrations": "*"
+        "html2text/html2text": "*"
     }
 }

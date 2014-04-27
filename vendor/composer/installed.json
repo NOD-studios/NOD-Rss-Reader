@@ -307,44 +307,5 @@
             "GPLv2"
         ],
         "description": "Converts HTML to formatted plain text"
-    },
-    {
-        "name": "cakedc/migrations",
-        "version": "2.2.3",
-        "version_normalized": "2.2.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/CakeDC/migrations.git",
-            "reference": "94036a606089c7e14b349eba043b0f58a0947e29"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/CakeDC/migrations/zipball/94036a606089c7e14b349eba043b0f58a0947e29",
-            "reference": "94036a606089c7e14b349eba043b0f58a0947e29",
-            "shasum": ""
-        },
-        "require": {
-            "composer/installers": "*"
-        },
-        "time": "2013-10-21 10:45:27",
-        "type": "cakephp-plugin",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Cake Development Corporation",
-                "email": "team@cakedc.com",
-                "homepage": "http://cakedc.com"
-            }
-        ],
-        "description": "Migrations Plugin for CakePHP",
-        "homepage": "http://cakedc.com",
-        "keywords": [
-            "cakephp",
-            "migrations"
-        ]
     }
 ]
