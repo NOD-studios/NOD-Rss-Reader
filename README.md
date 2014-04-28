@@ -8,8 +8,8 @@ Simple rss storing and searching build with CakePHP
 ```bash
 git clone git@github.com:NOD-Studios/NOD-Rss-Reader.git
 composer update
-vendor/cake/bin bake
-vendor/cake/bin scheme update
+vendor/bin/cake bake
+vendor/bin/cake scheme update
 ```
 
 Add some feeds than click to "Fetch All".
