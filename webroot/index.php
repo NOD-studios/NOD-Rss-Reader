@@ -52,7 +52,9 @@ if (!defined('APP_DIR')) {
  * The following line differs from its sibling
  * /app/webroot/index.php
  */
-define('CAKE_CORE_INCLUDE_PATH',  DS . 'Users' . DS . 'furkantunali' . DS . 'Sites' . DS . 'NodRssReader' . DS . 'Vendor' . DS . 'cakephp' . DS . 'cakephp' . DS . 'lib');
+if (!defined('CAKE_CORE_INCLUDE_PATH')) {
+    define('CAKE_CORE_INCLUDE_PATH',  dirname(dirname(__FILE__)) . DS . 'vendor' . DS . 'cakephp' . DS . 'cakephp' . DS . 'lib');
+}
 
 /**
  * Editing below this line should NOT be necessary.
